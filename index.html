@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سورة البقرة - آيات ٢٦-٢٩ | Surah Al-Baqarah - Verses 26-29</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .arabic-title {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: #8b4513;
+            margin-bottom: 10px;
+            direction: rtl;
+        }
+
+        .page-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .verse-container {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .verse-header {
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            color: white;
+            padding: 15px 25px;
+            font-weight: 600;
+        }
+
+        .verse-content {
+            padding: 30px;
+        }
+
+        .arabic-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            border-right: 4px solid #8b4513;
+            padding-right: 20px;
+        }
+
+        .english-verse {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 25px;
+            font-style: italic;
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+        }
+
+        .reflection-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+
+        .reflection-title {
+            font-size: 1.3rem;
+            color: #8b4513;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .arabic-reflection {
+            font-family: 'Amiri', serif;
+            font-size: 1.2rem;
+            text-align: right;
+            direction: rtl;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+
+        .english-reflection {
+            color: #34495e;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Audio Player Styles */
+        .audio-player {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 1160px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .audio-player:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-spacer {
+            height: 400px;
+        }
+
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .reciter-selection {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .reciter-selection select {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .reciter-selection select option {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .play-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #8b4513, #a0522d);
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .progress-container {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #8b4513, #a0522d);
+            border-radius: 4px;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .audio-settings {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .speed-control, .volume-control, .auto-advance-control {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .speed-control select, .volume-control input {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        .auto-advance-control {
+            font-size: 0.8rem;
+            color: white;
+        }
+
+        .auto-advance-control input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .auto-advance-control label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .volume-control input[type="range"] {
+            width: 80px;
+        }
+
+        .current-verse {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #ffd700;
+            transition: all 0.5s ease;
+        }
+
+        /* Individual Verse Highlighting */
+        .individual-verse {
+            padding: 15px 20px;
+            margin: 8px 0;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .individual-verse:hover {
+            background: rgba(139, 69, 19, 0.05);
+        }
+
+        .individual-verse.active-verse {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 193, 7, 0.1));
+            border: 2px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            transform: translateX(10px);
+        }
+
+        .individual-verse.playing-verse {
+            background: linear-gradient(135deg, rgba(39, 174, 96, 0.15), rgba(46, 204, 113, 0.1));
+            border: 2px solid #27ae60;
+            box-shadow: 0 4px 20px rgba(39, 174, 96, 0.4);
+            animation: playingPulse 2s infinite;
+            transform: translateX(15px);
+        }
+
+        .individual-verse.completed-verse {
+            background: rgba(108, 117, 125, 0.1);
+            opacity: 0.7;
+            border: 1px solid rgba(108, 117, 125, 0.3);
+        }
+
+        @keyframes playingPulse {
+            0%, 100% { 
+                box-shadow: 0 4px 20px rgba(39, 174, 96, 0.4);
+            }
+            50% { 
+                box-shadow: 0 6px 25px rgba(39, 174, 96, 0.6);
+            }
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .audio-info {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .verse-scroll-indicator {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            background: rgba(39, 174, 96, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            z-index: 99;
+            animation: slideInOut 3s ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes slideInOut {
+            0%, 100% { 
+                opacity: 0; 
+                transform: translateX(100px); 
+            }
+            20%, 80% { 
+                opacity: 1; 
+                transform: translateX(0); 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+
+            .arabic-title {
+                font-size: 1.6rem;
+            }
+
+            .header h1 {
+                font-size: 1.4rem;
+            }
+
+            .verse-content {
+                padding: 15px;
+            }
+
+            .arabic-verse {
+                font-size: 1.3rem;
+                line-height: 2;
+                padding-right: 15px;
+            }
+
+            .english-verse {
+                font-size: 1rem;
+                padding-left: 15px;
+            }
+
+            .individual-verse {
+                padding: 10px 12px;
+                margin: 5px 0;
+                font-size: 1.3rem;
+                border-radius: 8px;
+            }
+
+            .individual-verse.active-verse,
+            .individual-verse.playing-verse {
+                transform: translateX(3px);
+            }
+
+            /* Mobile Audio Player Optimization */
+            .audio-player {
+                padding: 15px;
+                margin-bottom: 20px;
+                position: fixed;
+                top: 180px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: calc(100% - 20px);
+                border-radius: 10px;
+            }
+
+            .content-spacer {
+                height: 400px;
+            }
+
+            .audio-controls {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .reciter-selection {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+                margin-bottom: 15px;
+            }
+
+            .reciter-selection select {
+                width: 100%;
+                max-width: 280px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+
+            .audio-info {
+                font-size: 0.85rem;
+                margin-bottom: 10px;
+            }
+
+            .play-controls {
+                order: 1;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .play-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 1.3rem;
+            }
+
+            .play-btn[style*="width: 40px"] {
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 1.1rem !important;
+            }
+
+            .progress-container {
+                order: 2;
+                width: 100%;
+                margin: 15px 0;
+            }
+
+            .progress-bar {
+                height: 10px;
+                margin: 15px 0;
+            }
+
+            .time-display {
+                font-size: 0.85rem;
+                margin-top: 5px;
+            }
+
+            .audio-settings {
+                order: 3;
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+
+            .speed-control, .volume-control {
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .speed-control select {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+
+            .volume-control {
+                width: 100%;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+
+            .volume-control input[type="range"] {
+                width: 120px;
+            }
+
+            .auto-advance-control {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .auto-advance-control label {
+                font-size: 0.85rem;
+                justify-content: center;
+            }
+
+            /* Mobile Verse Highlighting */
+            .verse-scroll-indicator {
+                right: 10px;
+                top: 50%;
+                font-size: 0.7rem;
+                padding: 6px 10px;
+                max-width: 200px;
+                word-wrap: break-word;
+                z-index: 99;
+            }
+
+            /* Mobile Navigation */
+            .navigation {
+                margin-bottom: 15px;
+            }
+
+            .nav-link {
+                padding: 12px 20px;
+                font-size: 0.85rem;
+            }
+
+            /* Mobile Reflections */
+            .arabic-reflection {
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+
+            .english-reflection {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .reflection-title {
+                font-size: 1.2rem;
+            }
+
+            /* Better touch targets */
+            .individual-verse {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Improve readability */
+            .verse-header {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+            }
+
+            .page-info {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575px) {
+            .container {
+                padding: 8px;
+            }
+
+            .header {
+                padding: 15px 10px;
+            }
+
+            .arabic-title {
+                font-size: 1.4rem;
+            }
+
+            .header h1 {
+                font-size: 1.2rem;
+            }
+
+            .verse-content {
+                padding: 12px;
+            }
+
+            .arabic-verse {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
+
+            .english-verse {
+                font-size: 0.95rem;
+                padding-left: 10px;
+            }
+
+            .individual-verse {
+                padding: 8px 10px;
+                font-size: 1.2rem;
+            }
+
+            .audio-player {
+                padding: 12px;
+                width: calc(100% - 16px);
+                border-radius: 8px;
+                top: 160px;
+            }
+
+            .content-spacer {
+                height: 380px;
+            }
+
+            .play-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+
+            .play-btn[style*="width: 40px"] {
+                width: 40px !important;
+                height: 40px !important;
+                font-size: 1rem !important;
+            }
+
+            .reciter-selection select {
+                font-size: 0.85rem;
+                padding: 8px 10px;
+            }
+
+            .arabic-reflection {
+                font-size: 1rem;
+            }
+
+            .english-reflection {
+                font-size: 0.9rem;
+            }
+
+            .verse-scroll-indicator {
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="#" class="nav-link">← Page 4 | الصفحة السابقة</a>
+        </div>
+
+        <div class="header">
+            <div class="arabic-title">سورة البقرة - الآيات ٢٥-٢٩</div>
+            <h1>Surah Al-Baqarah - Verses 25-29</h1>
+            <p>The Cow - Paradise Promise and Divine Parables</p>
+            <div class="page-info">Quran Reflections - Page 5 | تأملات قرآنية - الصفحة ٥</div>
+        </div>
+
+        <!-- Content Spacer for Fixed Audio Player -->
+        <div class="content-spacer"></div>
+
+        <!-- Audio Player Section -->
+        <div class="audio-player">
+            <div class="reciter-selection">
+                <label>القارئ - Reciter:</label>
+                <select id="reciterSelect">
+                    <option value="ar.alafasy">مشاري العفاسي - Mishari Al-Afasy</option>
+                    <option value="ar.abdulsamad">عبد الباسط عبد الصمد - Abdul Basit</option>
+                    <option value="ar.sudais">عبد الرحمن السديس - Abdul Rahman Al-Sudais</option>
+                    <option value="ar.shuraym">سعود الشريم - Saood Al-Shuraym</option>
+                    <option value="ar.husary">محمود خليل الحصري - Mahmoud Al-Husary</option>
+                </select>
+            </div>
+
+            <div class="audio-info">
+                <div id="currentVerseInfo">سورة البقرة - آية ٢٥ | Al-Baqarah - Verse 25</div>
+            </div>
+
+            <div class="audio-controls">
+                <div class="play-controls">
+                    <button class="play-btn" id="playPauseBtn">
+                        <span id="playIcon">▶</span>
+                    </button>
+                    <button class="play-btn" style="width: 40px; height: 40px; font-size: 1rem;" id="prevBtn">⏮</button>
+                    <button class="play-btn" style="width: 40px; height: 40px; font-size: 1rem;" id="nextBtn">⏭</button>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="totalTime">0:00</span>
+                    </div>
+                </div>
+
+                <div class="audio-settings">
+                    <div class="speed-control">
+                        <label>السرعة:</label>
+                        <select id="speedSelect">
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1.0x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                        </select>
+                    </div>
+                    <div class="volume-control">
+                        <label>🔊</label>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                    </div>
+                    <div class="auto-advance-control">
+                        <label>
+                            <input type="checkbox" id="autoAdvanceToggle" checked>
+                            Auto-advance | التشغيل التلقائي
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <audio id="audioPlayer" preload="metadata">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="verse-container">
+            <div class="verse-header">
+                الآيات ٢٥-٢٩ | Verses 25-29: وعد الجنة والأمثال الإلهية
+            </div>
+            <div class="verse-content">
+                <div class="arabic-verse">
+                    <div class="individual-verse" data-verse="25" id="verse-25">
+                        وَبَشِّرِ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أَنَّ لَهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ ۖ كُلَّمَا رُزِقُوا مِنْهَا مِن ثَمَرَةٍ رِّزْقًا قَالُوا هَٰذَا الَّذِي رُزِقْنَا مِن قَبْلُ ۖ وَأُتُوا بِهِ مُتَشَابِهًا ۖ وَلَهُمْ فِيهَا أَزْوَاجٌ مُّطَهَّرَةٌ ۖ وَهُمْ فِيهَا خَالِدُونَ ﴿٢٥﴾
+                    </div>
+                    <div class="individual-verse" data-verse="26" id="verse-26">
+                        إِنَّ اللَّهَ لَا يَسْتَحْيِي أَن يَضْرِبَ مَثَلًا مَّا بَعُوضَةً فَمَا فَوْقَهَا ۚ فَأَمَّا الَّذِينَ آمَنُوا فَيَعْلَمُونَ أَنَّهُ الْحَقُّ مِن رَّبِّهِمْ ۖ وَأَمَّا الَّذِينَ كَفَرُوا فَيَقُولُونَ مَاذَا أَرَادَ اللَّهُ بِهَٰذَا مَثَلًا ۘ يُضِلُّ بِهِ كَثِيرًا وَيَهْدِي بِهِ كَثِيرًا ۚ وَمَا يُضِلُّ بِهِ إِلَّا الْفَاسِقِينَ ﴿٢٦﴾
+                    </div>
+                    <div class="individual-verse" data-verse="27" id="verse-27">
+                        الَّذِينَ يَنقُضُونَ عَهْدَ اللَّهِ مِن بَعْدِ مِيثَاقِهِ وَيَقْطَعُونَ مَا أَمَرَ اللَّهُ بِهِ أَن يُوصَلَ وَيُفْسِدُونَ فِي الْأَرْضِ ۚ أُولَٰئِكَ هُمُ الْخَاسِرُونَ ﴿٢٧﴾
+                    </div>
+                    <div class="individual-verse" data-verse="28" id="verse-28">
+                        كَيْفَ تَكْفُرُونَ بِاللَّهِ وَكُنتُمْ أَمْوَاتًا فَأَحْيَاكُمْ ۖ ثُمَّ يُمِيتُكُمْ ثُمَّ يُحْيِيكُمْ ثُمَّ إِلَيْهِ تُرْجَعُونَ ﴿٢٨﴾
+                    </div>
+                    <div class="individual-verse" data-verse="29" id="verse-29">
+                        هُوَ الَّذِي خَلَقَ لَكُم مَّا فِي الْأَرْضِ جَمِيعًا ثُمَّ اسْتَوَىٰ إِلَى السَّمَاءِ فَسَوَّاهُنَّ سَبْعَ سَمَاوَاتٍ ۚ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ ﴿٢٩﴾
+                    </div>
+                </div>
+                
+                <div class="english-verse">
+                    <strong>Verse 25:</strong> "And give good tidings to those who believe and do righteous deeds that they will have gardens [in Paradise] beneath which rivers flow. Whenever they are provided with a provision of fruit therefrom, they will say, 'This is what we were provided with before.' And it is given to them in likeness. And they will have therein purified spouses, and they will abide therein eternally."
+                    <br><br>
+                    <strong>Verse 26:</strong> "Indeed, Allah is not timid to present an example - that of a mosquito or what is smaller than it. And those who have believed know that it is the truth from their Lord. But those who disbelieve say, 'What did Allah intend by this as an example?' He misleads many thereby and guides many thereby. And He misleads not except the defiantly disobedient."
+                    <br><br>
+                    <strong>Verse 27:</strong> "Who break the covenant of Allah after contracting it and sever that which Allah has ordered to be joined and cause corruption on earth. It is those who are the losers."
+                    <br><br>
+                    <strong>Verse 28:</strong> "How can you disbelieve in Allah when you were lifeless and He brought you to life; then He will cause you to die, then He will bring you [back] to life, and then to Him you will be returned."
+                    <br><br>
+                    <strong>Verse 29:</strong> "It is He who created for you all of that which is on the earth. Then He directed Himself to the heaven, [His being above all creation], and made them seven heavens, and He is Knowing of all things."
+                </div>
+                
+                <div class="reflection-section">
+                    <div class="reflection-title">تأملات - Reflections</div>
+                    <div class="arabic-reflection">
+                        تبدأ هذه الآيات ببشارة عظيمة للمؤمنين بجنات تجري من تحتها الأنهار، وفيها تفاصيل بديعة عن نعيم الآخرة وأزواج مطهرة وخلود أبدي. ثم تنتقل للدفاع عن الأمثال القرآنية، حتى لو كانت بأبسط المخلوقات كالبعوضة، فالله لا يستحيي من الحق والحكمة. المؤمنون يدركون حكمة هذه الأمثال بينما الكافرون يعترضون عليها. ثم تصف الآيات صفات الفاسقين الذين ينقضون العهود ويقطعون الصلات ويفسدون في الأرض، وتختتم بسؤال استنكاري عميق: كيف تكفرون بالله؟ مذكرة بدورة الحياة والموت والبعث، وبأن الله هو خالق كل شيء في الأرض والسماوات السبع. إنها رحلة من وعد الجنة إلى دفاع عن حكمة الأمثال إلى تذكير بعظمة الخالق، تظهر أن الإيمان يبدأ بالأمل ويترسخ بالحكمة ويكتمل بالتدبر في الخلق.
+                    </div>
+                    <div class="english-reflection">
+                        These verses begin with magnificent glad tidings for believers about gardens beneath which rivers flow, with beautiful details about the blessings of the afterlife, purified spouses, and eternal dwelling. They then transition to defending Quranic parables, even when they involve the smallest creatures like mosquitoes, for Allah is not shy of truth and wisdom. Believers recognize the wisdom in these examples while disbelievers object to them. The verses then describe the characteristics of the rebellious who break covenants, sever relationships that Allah commanded to be maintained, and spread corruption on earth. They conclude with a profound rhetorical question: How can you disbelieve in Allah? This reminds us of the cycle of life, death, and resurrection, and that Allah is the Creator of everything on earth and the seven heavens. This is a journey from the promise of Paradise to defending the wisdom of divine examples to reminding us of the Creator's magnificence. It shows that faith begins with hope, is strengthened by wisdom, and is completed through contemplation of creation. The progression beautifully illustrates how divine guidance moves from inspiring our hearts with Paradise's promise, to training our minds with wisdom, to overwhelming our souls with the reality of Allah's infinite power and knowledge.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Audio Player Functionality for Page 5
+        class QuranAudioPlayer {
+            constructor() {
+                this.audioPlayer = document.getElementById('audioPlayer');
+                this.playPauseBtn = document.getElementById('playPauseBtn');
+                this.playIcon = document.getElementById('playIcon');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.progressBar = document.getElementById('progressBar');
+                this.progressFill = document.getElementById('progressFill');
+                this.currentTime = document.getElementById('currentTime');
+                this.totalTime = document.getElementById('totalTime');
+                this.reciterSelect = document.getElementById('reciterSelect');
+                this.speedSelect = document.getElementById('speedSelect');
+                this.volumeSlider = document.getElementById('volumeSlider');
+                this.currentVerseInfo = document.getElementById('currentVerseInfo');
+                this.autoAdvanceToggle = document.getElementById('autoAdvanceToggle');
+                
+                this.currentVerse = 25;
+                this.verses = [25, 26, 27, 28, 29];
+                this.isPlaying = false;
+                this.currentAudioData = null;
+                this.loadingTimeout = null;
+                this.advanceTimeout = null;
+                this.completedVerses = new Set();
+                
+                this.initializePlayer();
+                this.bindEvents();
+                this.loadCurrentVerse();
+                this.setupVerseClicks();
+            }
+
+            initializePlayer() {
+                this.audioPlayer.volume = 0.7;
+                this.updateVerseInfo();
+            }
+
+            bindEvents() {
+                this.playPauseBtn.addEventListener('click', () => this.togglePlayPause());
+                this.prevBtn.addEventListener('click', () => this.previousVerse());
+                this.nextBtn.addEventListener('click', () => this.nextVerse());
+                this.progressBar.addEventListener('click', (e) => this.seekTo(e));
+                
+                this.audioPlayer.addEventListener('loadedmetadata', () => this.updateTotalTime());
+                this.audioPlayer.addEventListener('timeupdate', () => this.updateProgress());
+                this.audioPlayer.addEventListener('ended', () => this.onTrackEnded());
+                this.audioPlayer.addEventListener('canplay', () => this.handleCanPlay());
+                this.audioPlayer.addEventListener('error', () => this.handleError());
+                this.audioPlayer.addEventListener('loadstart', () => this.showLoadingState());
+                this.audioPlayer.addEventListener('waiting', () => this.showLoadingState());
+                this.audioPlayer.addEventListener('canplaythrough', () => this.hideLoadingState());
+                this.audioPlayer.addEventListener('play', () => this.onPlayStart());
+                this.audioPlayer.addEventListener('pause', () => this.onPlayPause());
+                
+                this.reciterSelect.addEventListener('change', () => this.loadCurrentVerse());
+                this.speedSelect.addEventListener('change', () => this.changeSpeed());
+                this.volumeSlider.addEventListener('input', () => this.changeVolume());
+                this.autoAdvanceToggle.addEventListener('change', () => this.onAutoAdvanceToggle());
+            }
+
+            async loadCurrentVerse() {
+                try {
+                    this.showLoadingState();
+                    const reciter = this.reciterSelect.value;
+                    
+                    const absoluteAyahNumber = 7 + this.currentVerse;
+                    const apiUrl = `https://api.alquran.cloud/v1/ayah/${absoluteAyahNumber}/${reciter}`;
+                    
+                    if (this.loadingTimeout) {
+                        clearTimeout(this.loadingTimeout);
+                    }
+
+                    this.loadingTimeout = setTimeout(() => {
+                        this.handleLoadingTimeout();
+                    }, 10000);
+
+                    const response = await fetch(apiUrl);
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (data.status === 'OK' && data.data && data.data.audio) {
+                        this.currentAudioData = data.data;
+                        this.audioPlayer.src = data.data.audio;
+                        this.updateVerseInfo();
+                        this.highlightCurrentVerse();
+                        
+                        clearTimeout(this.loadingTimeout);
+                        this.loadingTimeout = null;
+                    } else {
+                        throw new Error('Invalid API response or no audio available');
+                    }
+                } catch (error) {
+                    console.warn(`Audio loading failed for verse ${this.currentVerse}:`, error.message);
+                    this.handleError(error.message);
+                }
+            }
+
+            togglePlayPause() {
+                if (this.isPlaying) {
+                    this.audioPlayer.pause();
+                    this.playIcon.textContent = '▶';
+                    this.isPlaying = false;
+                    this.updateVerseHighlighting();
+                } else {
+                    const playPromise = this.audioPlayer.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise
+                            .then(() => {
+                                this.playIcon.textContent = '⏸';
+                                this.isPlaying = true;
+                                this.updateVerseHighlighting();
+                                this.hideLoadingState();
+                            })
+                            .catch((error) => {
+                                console.warn('Playback failed:', error);
+                                this.handleError('Playback failed. Please try again.');
+                            });
+                    }
+                }
+            }
+
+            previousVerse() {
+                if (this.advanceTimeout) {
+                    clearTimeout(this.advanceTimeout);
+                    this.advanceTimeout = null;
+                }
+                
+                const currentIndex = this.verses.indexOf(this.currentVerse);
+                if (currentIndex > 0) {
+                    this.currentVerse = this.verses[currentIndex - 1];
+                    this.audioPlayer.pause();
+                    this.playIcon.textContent = '▶';
+                    this.isPlaying = false;
+                    this.loadCurrentVerse();
+                }
+            }
+
+            nextVerse() {
+                if (this.advanceTimeout) {
+                    clearTimeout(this.advanceTimeout);
+                    this.advanceTimeout = null;
+                }
+                
+                const currentIndex = this.verses.indexOf(this.currentVerse);
+                if (currentIndex < this.verses.length - 1) {
+                    this.currentVerse = this.verses[currentIndex + 1];
+                    this.audioPlayer.pause();
+                    this.playIcon.textContent = '▶';
+                    this.isPlaying = false;
+                    this.loadCurrentVerse();
+                } else {
+                    this.currentVerse = this.verses[0];
+                    this.audioPlayer.pause();
+                    this.playIcon.textContent = '▶';
+                    this.isPlaying = false;
+                    this.resetVerseHighlighting();
+                    this.loadCurrentVerse();
+                    this.showCompletionMessage();
+                }
+            }
+
+            onTrackEnded() {
+                this.playIcon.textContent = '▶';
+                this.isPlaying = false;
+                
+                this.completedVerses.add(this.currentVerse);
+                this.updateVerseHighlighting();
+                
+                if (this.autoAdvanceToggle.checked) {
+                    const currentIndex = this.verses.indexOf(this.currentVerse);
+                    if (currentIndex < this.verses.length - 1) {
+                        if (this.advanceTimeout) {
+                            clearTimeout(this.advanceTimeout);
+                        }
+                        
+                        this.advanceTimeout = setTimeout(() => {
+                            this.autoAdvanceToNext();
+                        }, 800);
+                    } else {
+                        this.showCompletionMessage();
+                        this.resetVerseHighlighting();
+                    }
+                } else {
+                    this.updateVerseHighlighting();
+                    this.updateVerseInfo();
+                }
+            }
+
+            autoAdvanceToNext() {
+                const currentIndex = this.verses.indexOf(this.currentVerse);
+                if (currentIndex < this.verses.length - 1) {
+                    this.currentVerse = this.verses[currentIndex + 1];
+                    this.loadCurrentVerse();
+                    
+                    setTimeout(() => {
+                        if (!this.isPlaying) {
+                            this.togglePlayPause();
+                        }
+                    }, 1000);
+                }
+            }
+
+            setupVerseClicks() {
+                document.querySelectorAll('.individual-verse').forEach(verseElement => {
+                    verseElement.addEventListener('click', () => {
+                        const verseNumber = parseInt(verseElement.getAttribute('data-verse'));
+                        this.jumpToVerse(verseNumber);
+                    });
+                });
+            }
+
+            jumpToVerse(verseNumber) {
+                if (this.verses.includes(verseNumber)) {
+                    this.audioPlayer.pause();
+                    this.playIcon.textContent = '▶';
+                    this.isPlaying = false;
+                    
+                    if (this.advanceTimeout) {
+                        clearTimeout(this.advanceTimeout);
+                        this.advanceTimeout = null;
+                    }
+                    
+                    this.currentVerse = verseNumber;
+                    this.loadCurrentVerse();
+                    this.scrollToCurrentVerse();
+                    
+                    this.showScrollIndicator(`Jumped to verse ${verseNumber} | انتقل للآية ${this.getArabicNumber(verseNumber)}`);
+                }
+            }
+
+            onPlayStart() {
+                this.updateVerseHighlighting();
+            }
+
+            onPlayPause() {
+                this.updateVerseHighlighting();
+            }
+
+            updateVerseHighlighting() {
+                document.querySelectorAll('.individual-verse').forEach(verse => {
+                    verse.classList.remove('active-verse', 'playing-verse');
+                });
+                
+                const currentVerseElement = document.getElementById(`verse-${this.currentVerse}`);
+                if (currentVerseElement) {
+                    if (this.isPlaying) {
+                        currentVerseElement.classList.add('playing-verse');
+                    } else {
+                        currentVerseElement.classList.add('active-verse');
+                    }
+                }
+                
+                this.completedVerses.forEach(verseNum => {
+                    const verseElement = document.getElementById(`verse-${verseNum}`);
+                    if (verseElement && verseNum !== this.currentVerse) {
+                        verseElement.classList.add('completed-verse');
+                    }
+                });
+            }
+
+            resetVerseHighlighting() {
+                document.querySelectorAll('.individual-verse').forEach(verse => {
+                    verse.classList.remove('active-verse', 'playing-verse', 'completed-verse');
+                });
+                this.completedVerses.clear();
+            }
+
+            highlightCurrentVerse() {
+                this.updateVerseHighlighting();
+                this.scrollToCurrentVerse();
+            }
+
+            scrollToCurrentVerse() {
+                const currentVerseElement = document.getElementById(`verse-${this.currentVerse}`);
+                if (currentVerseElement) {
+                    setTimeout(() => {
+                        const offsetTop = currentVerseElement.offsetTop;
+                        const audioPlayerHeight = document.querySelector('.audio-player').offsetHeight;
+                        const headerHeight = 200;
+                        
+                        window.scrollTo({
+                            top: offsetTop - audioPlayerHeight - headerHeight - 20,
+                            behavior: 'smooth'
+                        });
+                    }, 500);
+                }
+            }
+
+            showScrollIndicator(message) {
+                const indicator = document.createElement('div');
+                indicator.className = 'verse-scroll-indicator';
+                indicator.textContent = message;
+                
+                document.body.appendChild(indicator);
+                
+                setTimeout(() => {
+                    if (indicator.parentNode) {
+                        indicator.parentNode.removeChild(indicator);
+                    }
+                }, 3000);
+            }
+
+            seekTo(e) {
+                if (this.audioPlayer.duration) {
+                    const rect = this.progressBar.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    const percentage = clickX / rect.width;
+                    const newTime = percentage * this.audioPlayer.duration;
+                    this.audioPlayer.currentTime = newTime;
+                }
+            }
+
+            updateProgress() {
+                if (this.audioPlayer.duration) {
+                    const progress = (this.audioPlayer.currentTime / this.audioPlayer.duration) * 100;
+                    this.progressFill.style.width = progress + '%';
+                }
+                
+                const current = this.formatTime(this.audioPlayer.currentTime);
+                this.currentTime.textContent = current;
+            }
+
+            updateTotalTime() {
+                const total = this.formatTime(this.audioPlayer.duration);
+                this.totalTime.textContent = total;
+                this.hideLoadingState();
+            }
+
+            formatTime(seconds) {
+                if (isNaN(seconds) || !isFinite(seconds)) return '0:00';
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = Math.floor(seconds % 60);
+                return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+            }
+
+            changeSpeed() {
+                this.audioPlayer.playbackRate = parseFloat(this.speedSelect.value);
+            }
+
+            changeVolume() {
+                this.audioPlayer.volume = this.volumeSlider.value / 100;
+            }
+
+            updateVerseInfo() {
+                const arabicNumbers = {
+                    25: '٢٥', 26: '٢٦', 27: '٢٧', 28: '٢٨', 29: '٢٩'
+                };
+                
+                if (this.currentAudioData && this.currentAudioData.text) {
+                    this.currentVerseInfo.innerHTML = `
+                        <div>سورة البقرة - آية ${arabicNumbers[this.currentVerse]} | Al-Baqarah - Verse ${this.currentVerse}</div>
+                        <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 5px;">${this.reciterSelect.options[this.reciterSelect.selectedIndex].text}</div>
+                    `;
+                } else {
+                    this.currentVerseInfo.textContent = `سورة البقرة - آية ${arabicNumbers[this.currentVerse]} | Al-Baqarah - Verse ${this.currentVerse}`;
+                }
+            }
+
+            showLoadingState() {
+                const arabicNumbers = {
+                    25: '٢٥', 26: '٢٦', 27: '٢٧', 28: '٢٨', 29: '٢٩'
+                };
+                
+                this.currentVerseInfo.innerHTML = `
+                    <div style="opacity: 0.7;">
+                        <span class="loading-spinner">⏳</span>
+                        Loading verse ${this.currentVerse} - تحميل آية ${arabicNumbers[this.currentVerse]}...
+                    </div>
+                `;
+            }
+
+            hideLoadingState() {
+                this.updateVerseInfo();
+            }
+
+            handleCanPlay() {
+                this.updateVerseInfo();
+                if (this.loadingTimeout) {
+                    clearTimeout(this.loadingTimeout);
+                    this.loadingTimeout = null;
+                }
+            }
+
+            handleError(customMessage) {
+                if (this.loadingTimeout) {
+                    clearTimeout(this.loadingTimeout);
+                    this.loadingTimeout = null;
+                }
+                
+                const message = customMessage || 'Audio temporarily unavailable';
+                this.currentVerseInfo.innerHTML = `
+                    <div style="color: #ff6b6b; font-size: 0.9rem;">
+                        ⚠️ ${message}
+                        <div style="color: #666; font-size: 0.8rem; margin-top: 5px;">
+                            Try selecting a different reciter or try again later
+                        </div>
+                    </div>
+                `;
+                this.playIcon.textContent = '▶';
+                this.isPlaying = false;
+            }
+
+            handleLoadingTimeout() {
+                this.handleError('Loading timeout. Please check your connection.');
+            }
+
+            showCompletionMessage() {
+                this.currentVerseInfo.innerHTML = `
+                    <div style="color: #27ae60; font-weight: 600;">
+                        ✅ تم الانتهاء من جميع الآيات | All verses completed
+                        <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 5px;">
+                            Click play to start from verse 25 again
+                        </div>
+                    </div>
+                `;
+            }
+
+            onAutoAdvanceToggle() {
+                const status = this.autoAdvanceToggle.checked ? 'enabled' : 'disabled';
+                const arabicStatus = this.autoAdvanceToggle.checked ? 'مُفعّل' : 'مُعطّل';
+                
+                this.currentVerseInfo.innerHTML = `
+                    <div style="color: ${this.autoAdvanceToggle.checked ? '#27ae60' : '#e74c3c'};">
+                        Auto-advance ${status} | التشغيل التلقائي ${arabicStatus}
+                    </div>
+                `;
+                
+                setTimeout(() => {
+                    this.updateVerseInfo();
+                }, 2000);
+            }
+
+            getArabicNumber(num) {
+                const arabicNumbers = {
+                    25: '٢٥', 26: '٢٦', 27: '٢٧', 28: '٢٨', 29: '٢٩'
+                };
+                return arabicNumbers[num] || num.toString();
+            }
+        }
+
+        // Initialize the player when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new QuranAudioPlayer();
+            
+            // Animate the audio player into view
+            const audioPlayer = document.querySelector('.audio-player');
+            audioPlayer.style.opacity = '0';
+            audioPlayer.style.transform = 'translateX(-50%) translateY(-20px)';
+            
+            setTimeout(() => {
+                audioPlayer.style.transition = 'all 0.6s ease';
+                audioPlayer.style.opacity = '1';
+                audioPlayer.style.transform = 'translateX(-50%) translateY(0)';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
